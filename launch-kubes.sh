@@ -35,4 +35,4 @@ gcloud compute ssh kubernetes-host \
 sleep 30s
 
 echo "Installing KVM packages on host"
-bash kvm-prep.sh
+bash kvm-install.sh
