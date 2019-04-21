@@ -32,7 +32,7 @@ gcloud compute ssh kubernetes-host \
   --force-key-file-overwrite \
   --quiet > /dev/null 2> /dev/null
 
-sleep 30s
+sleep 45s
 
 echo "Installing KVM packages on host"
 bash kvm-install.sh
