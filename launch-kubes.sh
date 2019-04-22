@@ -34,5 +34,8 @@ gcloud compute ssh kubernetes-host \
 
 sleep 45s
 
-echo "Installing KVM packages on host"
-bash kvm-install.sh
+echo "Installing KVM virtual environment"
+bash kvm-install.sh &> /dev/null
+
+echo "Setting up kubic autoinstallation"
+bash deploy-kubic.sh
