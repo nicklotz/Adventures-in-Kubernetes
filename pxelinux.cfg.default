@@ -1,0 +1,6 @@
+default kubic
+# install
+label kubic
+  ipappend 2
+  kernel /usr/share/tftpboot-installation/openSUSE-MicroOS-x86_64/boot/x86_64/loader/linux
+  append initrd=/usr/share/tftpboot-installation/openSUSE-MicroOS-x86_64/boot/x86_64/loader/initrd instsys=tftp://TFTP_SERVER/root install=http://download.opensuse.org/tumbleweed/repo/oss/
